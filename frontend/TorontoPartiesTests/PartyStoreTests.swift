@@ -11,7 +11,7 @@ import XCTest
         for event in data.events {
             XCTAssertFalse(event.title.isEmpty)
             XCTAssertTrue(event.artistIDs.allSatisfy { id in data.artists.contains { $0.id == id } })
-            XCTAssertNil(event.ticketURL, "Demo events must not imply purchasable tickets")
+            XCTAssertEqual(event.ticketURL?.host, "www.eventbrite.ca", "Each listing should link to its Eventbrite source")
         }
         XCTAssertTrue(data.friendPlans.allSatisfy { plan in data.events.contains { $0.id == plan.eventID } })
     }
@@ -39,9 +39,9 @@ import XCTest
     func testSearchCombinesGenreAndArtist() async throws {
         let store = PartyStore(repository: BundledEventRepository())
         await store.load()
-        XCTAssertEqual(store.matchingEvents(query: "  KARAN  ", filter: .throwbacks).count, 2)
+        XCTAssertEqual(store.matchingEvents(query: "  SPIN SINGH  ", filter: .bollywood).count, 1)
         XCTAssertTrue(store.matchingEvents(query: "no such night", filter: .all).isEmpty)
-        XCTAssertEqual(store.matchingEvents(query: "Queen West", filter: .bollywood).first?.id, "desi-friday")
+        XCTAssertEqual(store.matchingEvents(query: "King West", filter: .bollywood).first?.id, "lets-nacho-oria-2026-10-17")
     }
 
     func testRepositoryErrorAndRetry() async {

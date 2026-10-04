@@ -5,6 +5,7 @@ import Observation
     private(set) var events: [PartyEvent] = []
     private(set) var artists: [Artist] = []
     private(set) var friendPlans: [FriendPlan] = []
+    private(set) var organizers: [OrganizerProfile] = []
     private(set) var savedIDs: Set<String>
     private(set) var attendance: [String: Attendance]
     private(set) var isLoading = false
@@ -34,6 +35,7 @@ import Observation
             events = catalog.events.sorted { $0.startsAt < $1.startsAt }
             artists = catalog.artists
             friendPlans = catalog.friendPlans
+            organizers = catalog.organizers
         } catch {
             errorMessage = "We couldn't load the nights. Check your connection and try again."
         }
