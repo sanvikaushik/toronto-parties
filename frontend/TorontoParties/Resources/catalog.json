@@ -1,0 +1,124 @@
+{
+  "events": [
+    {
+      "id": "bollywood-after-hours",
+      "title": "Bollywood After Hours",
+      "startsAt": "2026-10-17T22:00:00-04:00",
+      "venue": "The Studio (sample venue)",
+      "neighborhood": "King West",
+      "genres": [
+        "Bollywood",
+        "Throwbacks"
+      ],
+      "description": "The opening notes. The chorus everyone knows. A late-night mix of Bollywood favourites and throwbacks, made for your whole group.",
+      "minimumAge": 19,
+      "priceLabel": "Sample listing \u00b7 Pricing to come",
+      "artistIDs": [
+        "karan"
+      ],
+      "artworkName": "Disco",
+      "featured": true,
+      "artworkURL": null,
+      "ticketURL": null
+    },
+    {
+      "id": "desi-friday",
+      "title": "Desi Friday",
+      "startsAt": "2026-10-23T22:00:00-04:00",
+      "venue": "West Room (sample venue)",
+      "neighborhood": "Queen West",
+      "genres": [
+        "Bollywood",
+        "Punjabi"
+      ],
+      "description": "Friday energy, Punjabi favourites and Bollywood hits. Start the weekend with the people who know every word.",
+      "minimumAge": 19,
+      "priceLabel": "Sample listing \u00b7 Pricing to come",
+      "artistIDs": [
+        "meera"
+      ],
+      "artworkName": null,
+      "featured": false,
+      "artworkURL": null,
+      "ticketURL": null
+    },
+    {
+      "id": "bollywood-social",
+      "title": "The Bollywood Social",
+      "startsAt": "2026-10-24T21:00:00-04:00",
+      "venue": "Social House (sample venue)",
+      "neighborhood": "Downtown",
+      "genres": [
+        "Throwbacks"
+      ],
+      "description": "A love letter to the soundtrack of growing up. A night of nostalgic Bollywood, familiar choruses and new connections.",
+      "minimumAge": 19,
+      "priceLabel": "Sample listing \u00b7 Pricing to come",
+      "artistIDs": [
+        "karan",
+        "meera"
+      ],
+      "artworkName": "Disco",
+      "featured": false,
+      "artworkURL": null,
+      "ticketURL": null
+    },
+    {
+      "id": "sunday-mehfil",
+      "title": "Sunday Mehfil",
+      "startsAt": "2026-10-25T19:00:00-04:00",
+      "venue": "The Listening Room (sample venue)",
+      "neighborhood": "Kensington Market",
+      "genres": [
+        "Bollywood"
+      ],
+      "description": "A slower start, a shared soundtrack, and Bollywood favourites to close out your weekend. A sample recurring-night concept.",
+      "minimumAge": 19,
+      "priceLabel": "Sample listing \u00b7 Pricing to come",
+      "artistIDs": [
+        "meera"
+      ],
+      "artworkName": null,
+      "featured": false,
+      "artworkURL": null,
+      "ticketURL": null
+    }
+  ],
+  "artists": [
+    {
+      "id": "karan",
+      "name": "DJ Karan",
+      "tagline": "Bollywood \u00b7 Desi edits",
+      "bio": "A fictional profile exploring where artist stories could live in the app. High-energy Bollywood favourites meet nostalgic edits."
+    },
+    {
+      "id": "meera",
+      "name": "DJ Meera",
+      "tagline": "Punjabi \u00b7 Bollywood \u00b7 Throwbacks",
+      "bio": "A fictional profile for the prototype. A musical journey through old favourites and new dance-floor discoveries."
+    }
+  ],
+  "friendPlans": [
+    {
+      "id": "priya-plan",
+      "name": "Priya",
+      "initials": "PK",
+      "eventID": "bollywood-after-hours",
+      "status": "Going"
+    },
+    {
+      "id": "aarav-plan",
+      "name": "Aarav",
+      "initials": "AS",
+      "eventID": "desi-friday",
+      "status": "Interested"
+    },
+    {
+      "id": "neha-plan",
+      "name": "Neha",
+      "initials": "NR",
+      "eventID": "bollywood-after-hours",
+      "status": "Going"
+    }
+  ]
+}
