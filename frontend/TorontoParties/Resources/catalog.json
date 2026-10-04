@@ -1,101 +1,157 @@
 {
   "events": [
     {
-      "id": "bollywood-after-hours",
-      "title": "Bollywood After Hours",
-      "startsAt": "2026-10-17T22:00:00-04:00",
-      "venue": "The Studio (sample venue)",
-      "neighborhood": "King West",
+      "id": "besharam-9xm-2026-10-10",
+      "title": "2000’s Bollywood Party: 9XM Inspired",
+      "startsAt": "2026-10-10T22:00:00-04:00",
+      "venue": "MIA Toronto",
+      "neighborhood": "Entertainment District",
       "genres": [
         "Bollywood",
         "Throwbacks"
       ],
-      "description": "The opening notes. The chorus everyone knows. A late-night mix of Bollywood favourites and throwbacks, made for your whole group.",
-      "minimumAge": 19,
-      "priceLabel": "Sample listing \u00b7 Pricing to come",
+      "description": "A night of 2000s Bollywood favourites and throwback singalongs at MIA.",
+      "minimumAge": 18,
+      "priceLabel": "Paid · see ticket listing",
       "artistIDs": [
-        "karan"
+        "vodka",
+        "zaen",
+        "snine"
       ],
       "artworkName": "Disco",
+      "artworkURL": "https://www.eventbrite.ca/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194675561%252F2985081761087%252F1%252Foriginal.20260929-221522%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D1880%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.996%26fp-y%3D0.539%26s%3D04a65e3c352e0af3c83a908b4773581e&w=1080&q=75",
+      "ticketURL": "https://www.eventbrite.ca/e/2000s-bollywood-party-9xm-inspired-tickets-2002594047705",
       "featured": true,
-      "artworkURL": null,
-      "ticketURL": null
+      "organizerName": "Besharam"
     },
     {
-      "id": "desi-friday",
-      "title": "Desi Friday",
-      "startsAt": "2026-10-23T22:00:00-04:00",
-      "venue": "West Room (sample venue)",
-      "neighborhood": "Queen West",
+      "id": "lets-nacho-oria-2026-10-17",
+      "title": "Lets Nacho | Bollywood & Bhangra Party",
+      "startsAt": "2026-10-17T22:30:00-04:00",
+      "venue": "Oria Nightclub",
+      "neighborhood": "King West",
       "genres": [
         "Bollywood",
         "Punjabi"
       ],
-      "description": "Friday energy, Punjabi favourites and Bollywood hits. Start the weekend with the people who know every word.",
-      "minimumAge": 19,
-      "priceLabel": "Sample listing \u00b7 Pricing to come",
+      "description": "A King Street West night with Bollywood, Punjabi and Desi hits at Oria Nightclub.",
+      "minimumAge": null,
+      "priceLabel": "Paid · see ticket listing",
       "artistIDs": [
-        "meera"
-      ],
-      "artworkName": null,
-      "featured": false,
-      "artworkURL": null,
-      "ticketURL": null
-    },
-    {
-      "id": "bollywood-social",
-      "title": "The Bollywood Social",
-      "startsAt": "2026-10-24T21:00:00-04:00",
-      "venue": "Social House (sample venue)",
-      "neighborhood": "Downtown",
-      "genres": [
-        "Throwbacks"
-      ],
-      "description": "A love letter to the soundtrack of growing up. A night of nostalgic Bollywood, familiar choruses and new connections.",
-      "minimumAge": 19,
-      "priceLabel": "Sample listing \u00b7 Pricing to come",
-      "artistIDs": [
-        "karan",
-        "meera"
+        "mian",
+        "narak"
       ],
       "artworkName": "Disco",
+      "artworkURL": "https://www.eventbrite.ca/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194906872%252F2982942008941%252F1%252Foriginal.20261002-135351%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D1880%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D83c66e4a3ef752da8ebe353a4d77eb99&w=1080&q=75",
+      "ticketURL": "https://www.eventbrite.ca/e/lets-nacho-bollywood-bhangra-party-tickets-2001062532903",
       "featured": false,
-      "artworkURL": null,
-      "ticketURL": null
+      "organizerName": "Lets Nacho - King St W"
     },
     {
-      "id": "sunday-mehfil",
-      "title": "Sunday Mehfil",
-      "startsAt": "2026-10-25T19:00:00-04:00",
-      "venue": "The Listening Room (sample venue)",
-      "neighborhood": "Kensington Market",
+      "id": "bombay-nights-2026-10-17",
+      "title": "Bombay Nights · Fall Edition",
+      "startsAt": "2026-10-17T22:30:00-04:00",
+      "venue": "The Dopamine Lounge",
+      "neighborhood": "Yonge & Eglinton",
       "genres": [
         "Bollywood"
       ],
-      "description": "A slower start, a shared soundtrack, and Bollywood favourites to close out your weekend. A sample recurring-night concept.",
+      "description": "An all-Bollywood night featuring Bollywood hits, Hindi remixes and Top 40.",
       "minimumAge": 19,
-      "priceLabel": "Sample listing \u00b7 Pricing to come",
+      "priceLabel": "Paid · see ticket listing",
       "artistIDs": [
-        "meera"
+        "spin-singh",
+        "rythmyx"
       ],
-      "artworkName": null,
+      "artworkName": "Disco",
+      "artworkURL": "https://www.eventbrite.ca/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1194135179%252F103674584349%252F1%252Foriginal.20260922-200013%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D1880%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D5b7e8c871628a7d4c94da3d80ccfe016&w=1080&q=75",
+      "ticketURL": "https://www.eventbrite.ca/e/bombay-nights-canadas-longest-running-bollywood-party-tickets-2001890852429",
       "featured": false,
-      "artworkURL": null,
-      "ticketURL": null
+      "organizerName": "SimplyGaurav Events"
+    },
+    {
+      "id": "tashan-bollyween-2026-10-30",
+      "title": "Tashan presents BOLLYWEEN",
+      "startsAt": "2026-10-30T22:00:00-04:00",
+      "venue": "MIA Toronto",
+      "neighborhood": "Entertainment District",
+      "genres": [
+        "Bollywood",
+        "Halloween"
+      ],
+      "description": "Tashan’s queer Bollywood Halloween party returns to MIA. The listing says the DJ line-up is to be announced.",
+      "minimumAge": 19,
+      "priceLabel": "Paid · see ticket listing",
+      "artistIDs": [],
+      "artworkName": "Disco",
+      "artworkURL": "https://www.eventbrite.ca/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1193408392%252F739975490683%252F1%252Foriginal.20260914-013236%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D1880%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D2f274cd4b58de65c4b1236cb4d438092&w=1080&q=75",
+      "ticketURL": "https://www.eventbrite.ca/e/tashan-presents-bollyween-tickets-2000233184299",
+      "featured": false,
+      "organizerName": "Tashan Events"
+    },
+    {
+      "id": "bollywood-diwali-2026-11-06",
+      "title": "Bollywood Diwali Party 2026",
+      "startsAt": "2026-11-06T22:00:00-05:00",
+      "venue": "Club TBA",
+      "neighborhood": "Toronto",
+      "genres": [
+        "Bollywood",
+        "Diwali"
+      ],
+      "description": "A Toronto Diwali party. The listing notes 17+ entry and 19+ to drink; venue is still to be announced.",
+      "minimumAge": 17,
+      "priceLabel": "From $10 · see ticket listing",
+      "artistIDs": [],
+      "artworkName": "Disco",
+      "artworkURL": "https://www.eventbrite.ca/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1192011036%252F77837906803%252F1%252Foriginal.20260827-064648%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D1880%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3Da887f3e6807d6f179d9052d33f5dbe4d&w=1080&q=75",
+      "ticketURL": "https://www.eventbrite.ca/e/bollywood-diwali-party-2026-torontos-biggest-bollywood-party-tickets-1998308061204",
+      "featured": false,
+      "organizerName": "Bollywood Party Monsters"
     }
   ],
   "artists": [
     {
-      "id": "karan",
-      "name": "DJ Karan",
-      "tagline": "Bollywood \u00b7 Desi edits",
-      "bio": "A fictional profile exploring where artist stories could live in the app. High-energy Bollywood favourites meet nostalgic edits."
+      "id": "vodka",
+      "name": "DJ Vodka",
+      "tagline": "Bollywood · 9XM throwbacks",
+      "bio": "Listed in the lineup for Besharam’s October 10 event."
     },
     {
-      "id": "meera",
-      "name": "DJ Meera",
-      "tagline": "Punjabi \u00b7 Bollywood \u00b7 Throwbacks",
-      "bio": "A fictional profile for the prototype. A musical journey through old favourites and new dance-floor discoveries."
+      "id": "zaen",
+      "name": "DJ Zaen",
+      "tagline": "Bollywood · Desi edits",
+      "bio": "Listed in the lineup for Besharam’s October 10 event."
+    },
+    {
+      "id": "snine",
+      "name": "DJ Snine",
+      "tagline": "Bollywood · Party anthems",
+      "bio": "Listed in the lineup for Besharam’s October 10 event."
+    },
+    {
+      "id": "mian",
+      "name": "DJ Mian",
+      "tagline": "Bollywood · Bhangra · Desi hits",
+      "bio": "Named in the published DJ lineup for Let’s Nacho at Oria on October 17."
+    },
+    {
+      "id": "narak",
+      "name": "DJ Narak",
+      "tagline": "Bollywood · Bhangra · Desi hits",
+      "bio": "Named in the published DJ lineup for Let’s Nacho at Oria on October 17."
+    },
+    {
+      "id": "spin-singh",
+      "name": "Spin Singh",
+      "tagline": "Bollywood · Hindi remixes",
+      "bio": "Named in the music lineup for Bombay Nights on October 17."
+    },
+    {
+      "id": "rythmyx",
+      "name": "Rythmyx",
+      "tagline": "Bollywood · Top 40",
+      "bio": "Named in the music lineup for Bombay Nights on October 17."
     }
   ],
   "friendPlans": [
@@ -103,22 +159,38 @@
       "id": "priya-plan",
       "name": "Priya",
       "initials": "PK",
-      "eventID": "bollywood-after-hours",
+      "eventID": "besharam-9xm-2026-10-10",
       "status": "Going"
     },
     {
       "id": "aarav-plan",
       "name": "Aarav",
       "initials": "AS",
-      "eventID": "desi-friday",
+      "eventID": "lets-nacho-oria-2026-10-17",
       "status": "Interested"
     },
     {
       "id": "neha-plan",
       "name": "Neha",
       "initials": "NR",
-      "eventID": "bollywood-after-hours",
+      "eventID": "besharam-9xm-2026-10-10",
       "status": "Going"
+    }
+  ],
+  "organizers": [
+    {
+      "id": "mvm",
+      "name": "MVM Toronto Events",
+      "note": "Toronto organizer · listed for the community directory.",
+      "eventbriteURL": "https://www.eventbrite.ca/o/mvm-toronto-events-119708799641",
+      "recentListing": "Past listing · Day of the Dead Party · Nov 8, 2025"
+    },
+    {
+      "id": "indrah",
+      "name": "NIGHT FIESTA | INDRAH",
+      "note": "Toronto organizer · listed for the community directory.",
+      "eventbriteURL": "https://www.eventbrite.ca/o/night-fiesta-x-indrah-73860901283",
+      "recentListing": "Past listing · Bollywood cruise · Jun 21, 2026"
     }
   ]
 }

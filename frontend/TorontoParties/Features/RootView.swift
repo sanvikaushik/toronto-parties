@@ -71,7 +71,33 @@ struct DiscoverView: View {
                 } else {
                     ContentUnavailableView.search(text: query.isEmpty ? filter.rawValue : query)
                 }
-                if store.isDemo { Text("A preview of your city. Events and friends are fictional; nothing here books a ticket or posts a plan.")
+                if !store.organizers.isEmpty {
+                    VStack(alignment: .leading, spacing: 12) {
+                        HStack {
+                            Text("Promoters to know").font(.title3.bold())
+                            Spacer()
+                            Text("PROFILES").font(.system(size: 9, design: .monospaced)).tracking(1.2).foregroundStyle(.secondary)
+                        }
+                        ForEach(store.organizers) { organizer in
+                            HStack(spacing: 13) {
+                                Image(systemName: "sparkle").font(.system(size: 16)).frame(width: 42, height: 42).background(Color(.systemGray6), in: Circle())
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(organizer.name).font(.subheadline.weight(.semibold))
+                                    Text(organizer.note).font(.caption).foregroundStyle(.secondary).lineLimit(2)
+                                    if let previous = organizer.recentListing {
+                                        Text(previous).font(.caption2).foregroundStyle(.secondary).lineLimit(1)
+                                    }
+                                }
+                                Spacer(minLength: 0)
+                                Link(destination: organizer.eventbriteURL) {
+                                    Image(systemName: "arrow.up.right").font(.subheadline).frame(width: 36, height: 40)
+                                }.accessibilityLabel("Open \(organizer.name) on Eventbrite")
+                            }.padding(.vertical, 7)
+                            if organizer.id != store.organizers.last?.id { Divider() }
+                        }
+                    }
+                }
+                if store.isDemo { Text("Event snapshots checked Oct 4, 2026 · demo friend activity · not a live feed.")
                     .font(.caption).foregroundStyle(.secondary).lineSpacing(3) }
             }.padding(.horizontal, Layout.inset).padding(.bottom, 24)
         }.toolbar(.hidden, for: .navigationBar).refreshable { await store.load() }
@@ -90,6 +116,9 @@ struct DiscoverView: View {
                     VStack(alignment: .leading, spacing: 5) {
                         Text(event.title).font(.title3.bold()).tracking(-0.5)
                         Text("\(event.dateLabel) · \(event.neighborhood)").font(.caption).foregroundStyle(.secondary)
+                        if let organizer = event.organizerName {
+                            Text("BY \(organizer.uppercased())").font(.system(size: 9, weight: .medium, design: .monospaced)).tracking(1.1).foregroundStyle(.secondary)
+                        }
                     }.frame(maxWidth: .infinity, alignment: .leading)
                 }.buttonStyle(.plain)
                 SaveButton(event: event)

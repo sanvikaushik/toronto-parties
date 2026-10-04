@@ -14,9 +14,19 @@ struct EventDetailView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     Text(event.dateLabel.uppercased()).font(.system(size: 10, weight: .medium, design: .monospaced)).tracking(2).foregroundStyle(.secondary)
                     Text(event.title).font(.system(size: 35, weight: .bold)).tracking(-1.2)
-                    HStack { ForEach(event.genres, id: \.self) { GenreTag(text: $0) }; GenreTag(text: "\(event.minimumAge)+") }
+                    HStack { ForEach(event.genres, id: \.self) { GenreTag(text: $0) }; if let age = event.minimumAge { GenreTag(text: "\(age)+") } }
                 }
                 Divider()
+                if let organizer = event.organizerName {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("PRESENTED BY").font(.system(size: 9, design: .monospaced)).tracking(1.3).foregroundStyle(.secondary)
+                            Text(organizer).font(.subheadline.weight(.semibold))
+                        }
+                        Spacer()
+                        Image(systemName: "ticket").foregroundStyle(.secondary)
+                    }.padding(.vertical, 3)
+                }
                 VStack(spacing: 17) {
                     detailRow("clock", "When", "\(event.timeLabel) · Toronto time")
                     detailRow("mappin", "Where", "\(event.venue)\n\(event.neighborhood)")

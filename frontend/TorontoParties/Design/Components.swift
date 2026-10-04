@@ -37,7 +37,7 @@ struct EventArtwork: View {
             Group {
                 if let url = event.artworkURL {
                     AsyncImage(url: url) { image in image.resizable().scaledToFill() }
-                        placeholder: { fallback }
+                        placeholder: { posterPlaceholder }
                 } else if let name = event.artworkName {
                     Image(name).resizable().scaledToFill()
                 } else { fallback }
@@ -46,6 +46,23 @@ struct EventArtwork: View {
     }
     private var fallback: some View {
         ZStack { Color.black; Image(systemName: "opticaldisc").font(.system(size: 74, weight: .ultraLight)).foregroundStyle(.white) }
+    }
+    private var posterPlaceholder: some View {
+        ZStack(alignment: .bottomLeading) {
+            LinearGradient(colors: [.black, Color(white: 0.16)], startPoint: .topLeading, endPoint: .bottomTrailing)
+            VStack(alignment: .leading, spacing: 6) {
+                Text("TORONTO AFTER DARK")
+                    .font(.system(size: 9, weight: .semibold, design: .monospaced))
+                    .tracking(1.5)
+                    .foregroundStyle(.white.opacity(0.68))
+                Text(event.title)
+                    .font(.system(size: 18, weight: .bold))
+                    .tracking(-0.5)
+                    .foregroundStyle(.white)
+                    .lineLimit(3)
+            }
+            .padding(18)
+        }
     }
 }
 
@@ -97,6 +114,7 @@ struct GenreTag: View {
 }
 
 struct EventRow: View {
+    @Environment(PartyStore.self) private var store
     let event: PartyEvent
     var body: some View {
         HStack(spacing: 14) {
@@ -106,7 +124,7 @@ struct EventRow: View {
                     VStack(alignment: .leading, spacing: 6) {
                         Text(event.title).font(.system(size: 16, weight: .semibold)).foregroundStyle(.primary)
                         Text(event.dateLabel).font(.caption).foregroundStyle(.secondary)
-                        Text(event.neighborhood).font(.caption).foregroundStyle(.secondary)
+                        Text("\(event.neighborhood) · \(event.organizerName ?? "Toronto")").font(.caption).foregroundStyle(.secondary).lineLimit(1)
                     }.frame(maxWidth: .infinity, alignment: .leading)
                 }.contentShape(Rectangle())
             }.buttonStyle(.plain)
